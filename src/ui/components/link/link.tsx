@@ -20,6 +20,19 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
       [s.navigationActive]: variant === "navigation" && isActive,
     });
 
+    if (props.href?.startsWith("http") || props.target === "_blank") {
+      return (
+        <a
+          {...props}
+          className={linkClasses}
+          ref={ref}
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
       <a {...props} className={linkClasses} ref={ref}>
         {children}

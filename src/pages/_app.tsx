@@ -4,6 +4,7 @@ import { ibmPlexMono, libreFranklin } from "theme/fonts/fonts";
 import "ui/styles/styles.css";
 import "theme/theme.css";
 import "ui/styles/global.css";
+import { Layout } from "components";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,7 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
           --font-family-ibm-plex-mono: ${ibmPlexMono.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

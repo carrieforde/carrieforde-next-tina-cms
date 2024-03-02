@@ -1,4 +1,6 @@
 .chevronToggle {
+  --icon-fill: var(--text-color);
+
   display: inline-block;
 }
 

@@ -1,0 +1,14 @@
+.header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.branding {
+  height: 50px;
+  width: 50px;
+}
+
+.title {
+  composes: visuallyHidden from "ui/styles/utilities.module.css";
+}

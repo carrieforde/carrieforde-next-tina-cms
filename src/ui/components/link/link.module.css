@@ -4,6 +4,7 @@
 }
 
 .navigation {
+  font-size: var(--link-navigation-font-size, 16px);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -42,4 +43,12 @@
 
 .inherit {
   color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .link {
+    --link-color: var(--color-primary-200);
+    --link-content-text-decoration-color: var(--color-primary-200);
+    --link-color-primary: var(--color-primary-200);
+  }
 }

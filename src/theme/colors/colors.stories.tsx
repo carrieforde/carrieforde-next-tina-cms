@@ -74,8 +74,22 @@ const ColorSection: React.FC<{ name: ColorName }> = ({ name = "default" }) => {
                 backgroundColor: `var(${colorName})`,
               }}
             />
-            <code>{colorName}</code>
-            <code>{value}</code>
+            <code
+              style={{
+                backgroundColor: "transparent",
+                color: `var(--text-color)`,
+              }}
+            >
+              {colorName}
+            </code>
+            <code
+              style={{
+                backgroundColor: "transparent",
+                color: `var(--text-color)`,
+              }}
+            >
+              {value}
+            </code>
           </div>
         ))}
       </div>
