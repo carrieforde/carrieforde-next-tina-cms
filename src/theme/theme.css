@@ -1,0 +1,7 @@
+/* Dark Mode theme settings */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: var(--color-default-800);
+    --text-color: var(--color-default-light);
+  }
+}
