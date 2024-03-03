@@ -1,7 +1,7 @@
 .layout {
   margin-inline: auto;
   max-width: 100%;
-  padding-block-start: calc(var(--base-spacing) * 6);
+  padding-block: calc(var(--base-spacing) * 6);
   padding-inline: calc(var(--base-spacing) * 3);
   width: var(--layout-width, 640px);
 }

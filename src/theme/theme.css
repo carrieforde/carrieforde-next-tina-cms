@@ -9,6 +9,10 @@
   --logo-gradient-end: var(--color-primary-100);
 }
 
+.text--subtitle:has(:last-of-type) {
+  --subtitle-margin-bottom: calc(var(--base-spacing) * 6);
+}
+
 /* Dark Mode theme settings */
 @media (prefers-color-scheme: dark) {
   :root {

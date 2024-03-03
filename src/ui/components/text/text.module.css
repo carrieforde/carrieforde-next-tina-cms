@@ -27,6 +27,10 @@
   margin-top: 24px;
 }
 
+.subtitle:last-of-type {
+  margin-bottom: 48px;
+}
+
 .body1 {
   color: var(--body1-color, var(--text-color));
   font-family: var(--body1-font-family, var(--font-family-body));
